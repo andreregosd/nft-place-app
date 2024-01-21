@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.site-container {
+    min-height: calc(100vh - 128px);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.connect-wallet-box {
+    min-height: calc(100vh - 128px);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-background {
+    background: #0d1334;
 }
-
-.App-link {
-  color: #61dafb;
+.custom-border {
+    border-color: #0d1334;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-text-color {
+    color: #0d1334;
+}
+.custom-background2 {
+    background: #e5e0ac;
+    transition: 0.3s;
+}
+.custom-background2:hover {
+    background: #dbd376;
+}
+.custom-border2 {
+    border-color: #e5e0ac;
+}
+.custom-text-color2 {
+    color: #e5e0ac
+}
+#root {
+    background: url("./res/background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
